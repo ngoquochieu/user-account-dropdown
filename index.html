@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="/src/img/daidien.jpg" alt="">
+        </div>
+        <div class="menu">
+            <h3>Someone famous<br><span>Website Designer</span></h3>
+            <ul>
+                <li><img src="/src/img/user.png" alt=""><a href="">My Profile</a></li>
+                <li><img src="/src/img/edit.png" alt=""><a href="">Edit Profile</a></li>
+                <li><img src="/src/img/envelope.png" alt=""><a href="">Inbox</a></li>
+                <li><img src="/src/img//settings.png" alt=""><a href="">Settings</a></li>
+                <li><img src="/src/img//question.png" alt=""><a href="">Help</a></li>
+                <li><img src="/src/img/log-out.png" alt=""><a href="">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
